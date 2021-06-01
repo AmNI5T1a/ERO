@@ -18,7 +18,15 @@ ul,li{
 }
 
 body{
-
+    /* font-family: 'Roboto' sans-serif; */
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #5e5e5e;
+}
+header{
+    font-family: 'Roboto' sans-serif;
 }
 
 .header_top{
@@ -27,4 +35,28 @@ body{
 
 .header_btn{
     float:right;
+    line-height: 36px;
+    font-family: 'Roboto' sans-serif;
+    color:#1b1b1b;
+    background-color: #ffc222;
+    padding: 5px 20px 4px 50px;
+    font-size: 16px;
+}
+.header_btn:after{
+    content:"";
+    clear:both;
+    display: block;
+}
+
+.header_phone,.header_email{
+    color:#cbcacb;
+    letter-spacing: 0.25px;
+    line-height: 45px;
+}
+.header_phone{
+    padding-left: 20px;
+    padding-right: 30px;
+}
+.header_email{
+    padding-left: 24px;
 }
