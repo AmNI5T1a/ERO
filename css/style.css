@@ -41,22 +41,81 @@ header{
     background-color: #ffc222;
     padding: 5px 20px 4px 50px;
     font-size: 16px;
+    position: relative;
 }
-.header_btn:after{
+.header_btn:before{
+    content: "\f0b1";
+    font-family: 'icomoon';
+    position: absolute;
+    left:22px;
+    color: #1b1b1b;
+}
+.header_contacts:after{
     content:"";
     clear:both;
     display: block;
 }
 
-.header_phone,.header_email{
+.header_phone,
+.header_email{
     color:#cbcacb;
     letter-spacing: 0.25px;
     line-height: 45px;
+    position: relative;
 }
 .header_phone{
     padding-left: 20px;
     padding-right: 30px;
 }
+.header_phone::before{
+    content: "\f095";
+    font-family: 'icomoon';
+    position: absolute;
+    left:0;
+    color: #ffc222;
+}
+
 .header_email{
     padding-left: 24px;
 }
+.header_email:before{
+    content: "\f003";
+    font-family: 'icomoon';
+    position: absolute;
+    left:0;
+    color: #ffc222;
+}
+
+
+
+.header_content{
+   padding: 34px 0px 23px;
+}
+
+.header_content-inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu a{
+    color:#323232;
+    font-size: 16px;
+    line-height: 36px;
+    border: 1px solid transparent;
+    padding: 0px 16px;
+    transition: all .2s;
+}
+.menu a:hover{
+    border-color:#ffc222;
+}
+
+/* Это нужно чтобы лишка от лишки оступила, но при этом,чтобы первый элемент это правило миновал*/
+/* This need only for first element in a list of li's*/
+.menu li+li{
+    padding-left: 10px;
+}
+
