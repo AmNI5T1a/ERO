@@ -38,7 +38,7 @@ header{
     line-height: 36px;
     font-family: 'Roboto' sans-serif;
     color:#1b1b1b;
-    background-color: #ffc222;
+    background-color: #22b9ff;
     padding: 5px 20px 4px 50px;
     font-size: 16px;
     position: relative;
@@ -72,7 +72,7 @@ header{
     font-family: 'icomoon';
     position: absolute;
     left:0;
-    color: #ffc222;
+    color: #22b9ff;
 }
 
 .header_email{
@@ -83,7 +83,7 @@ header{
     font-family: 'icomoon';
     position: absolute;
     left:0;
-    color: #ffc222;
+    color: #22b9ff;
 }
 
 
@@ -110,7 +110,7 @@ header{
     transition: all .2s;
 }
 .menu a:hover{
-    border-color:#ffc222;
+    border-color:#22b9ff;
 }
 
 /* Это нужно чтобы лишка от лишки оступила, но при этом,чтобы первый элемент это правило миновал*/
@@ -119,3 +119,98 @@ header{
     padding-left: 10px;
 }
 
+#modal{
+    display: none;
+}
+
+.slider{
+    background-image: url(../img/slider-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+}
+
+.slider_item-content{
+    text-align: center;
+    padding-top: 110px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slider_title{
+    font-family: 'Roboto' sans-serif;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 36px;
+    color:#1b1b1b;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    margin-bottom: 22px;
+}
+.slider_text{
+    line-height: 24px;
+    font-size: 18px;
+    color: #323232;
+    margin-bottom: 50px;
+}
+.default_btn{
+    display: inline-block;
+    font-size: 14px;
+    line-height: 24px;
+    color:#323232   ;
+    font-weight: 500;
+    font-family: 'Roboto' sans-serif;
+    padding: 8px 30px 8px 24px;
+    border:1.5px solid #22b9ff;
+    border-right-width: 22px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+.default_btn:after{
+    content: "\f178";
+    font-family: 'icomoon';
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: -17px;
+}
+
+.slider_inner{
+    position: relative;
+}
+.slick_btn.slick-disabled{
+    cursor: default;
+    background-color: transparent;
+}
+.slick_btn{
+    position: absolute;
+    top:70%;
+    z-index: 3;
+    width: 40px;
+    height: 40px;
+    border:1.5px solid #22b9ff;
+    outline: none;
+    background-color: #22b9ff;
+}
+.slick_btn:before{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-family: "icomoon";
+    cursor: pointer;
+}
+.slick-next:before{
+    content: "\f178";
+}
+.slick-next{
+    right:0;
+}
+.slick-prev:before{
+    content: "\f177";
+}
+.slick-prev{
+    left:0;
+}
