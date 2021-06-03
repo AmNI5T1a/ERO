@@ -57,12 +57,14 @@ header{
 }
 
 .header_phone,
-.header_email{
+.header_email,
+.header_instagram{
     color:#cbcacb;
     letter-spacing: 0.25px;
     line-height: 45px;
     position: relative;
 }
+
 .header_phone{
     padding-left: 20px;
     padding-right: 30px;
@@ -77,6 +79,7 @@ header{
 
 .header_email{
     padding-left: 24px;
+    padding-right: 30px;
 }
 .header_email:before{
     content: "\f003";
@@ -86,6 +89,17 @@ header{
     color: #22b9ff;
 }
 
+.header_instagram{
+    padding-left: 20px;
+    padding-right: 30px;
+}
+.header_instagram:before{
+    content: "\f16d";
+    font-family: 'icomoon';
+    position: absolute;
+    left:0;
+    color: #22b9ff;
+}
 
 
 .header_content{
@@ -151,7 +165,7 @@ header{
 .slider_text{
     line-height: 24px;
     font-size: 18px;
-    color: #323232;
+    color: #000000;
     margin-bottom: 50px;
 }
 .default_btn{
@@ -216,21 +230,21 @@ header{
     left:0;
 }
 
-.about{
+.services{
     padding: 50px 0px 30px;
 }
 
-.about_top{
+.services_top{
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
 }
-.about_title-box{
+.services_title-box{
     max-width: 520px;
     padding-left: 140px;
     position: relative;
 }
-.about_title-box:before{
+.services_title-box:before{
     content:"";
     position: absolute;
     width: 100px;
@@ -240,7 +254,7 @@ header{
     top:13px;
 }
 
-.about_title{
+.services_title{
     font-size: 24px;
     font-weight: 500;
     font-family: 'Roboto' sans-serif;
@@ -248,17 +262,17 @@ header{
     color:#303030;
     margin-bottom: 10px;
 }
-.about_text{
+.services_text{
     letter-spacing: 0.1px;
 }
-.about_btn a{
+.services_btn a{
     letter-spacing: 0.4px;
     color:#5e5e5e;
     line-height: 24px;
     padding: 5px 38px;
     border:3px solid #22b9ff;
 }
-.about_items{
+.services_items{
     display: flex;
     justify-content: space-between;
 }
@@ -273,13 +287,13 @@ header{
     box-shadow: 0px 7px 24.3px 2.7px rgba(91, 89, 89, 0.34);
 }
 
-.about_item_img{
+.services_item_img{
     max-width: 60px;
     max-height: 60px;
     margin-bottom: 10px;
 }
 
-.about_item_title{
+.services_item_title{
     font-family: 'Roboto' sans-serif;
     color:#5e5e5e;
     font-size: 18px;
@@ -287,22 +301,22 @@ header{
     font-weight: 500;
     margin-bottom: 5px;
 }
-.about_item_text{
+.services_item_text{
     letter-spacing: 0.2px;
     padding: 0px 30px 30px;
 }
-.about_item_btn{
+.services_item_btn{
     position: absolute;
     bottom: 40px;
     left:0;
     right: 0;
 }
 
-.about_item_btn .default_btn{
+.services_item_btn .default_btn{
     color:#5e5e5e;
 }
 
-.about_item_link{
+.services_item_link{
     font-family: 'Roboto' sans-serif;
     color:#323232;
     text-decoration: underline;
