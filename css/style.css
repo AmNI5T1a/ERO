@@ -239,12 +239,14 @@ header{
     justify-content: space-between;
     margin-bottom: 60px;
 }
-.services_title-box{
+.services_title-box,
+.form_title_box{
     max-width: 520px;
     padding-left: 140px;
     position: relative;
 }
-.services_title-box:before{
+.services_title-box:before,
+.form_title_box:before{
     content:"";
     position: absolute;
     width: 100px;
@@ -254,7 +256,8 @@ header{
     top:13px;
 }
 
-.services_title{
+.services_title,
+.form_title{
     font-size: 24px;
     font-weight: 500;
     font-family: 'Roboto' sans-serif;
@@ -262,7 +265,8 @@ header{
     color:#303030;
     margin-bottom: 10px;
 }
-.services_text{
+.services_text,
+.form_text{
     letter-spacing: 0.1px;
 }
 .services_btn a{
@@ -321,4 +325,111 @@ header{
     color:#323232;
     text-decoration: underline;
     margin-right: 50px;
+}
+
+.about{
+    background-image: url(../img/about_our_company.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    background-repeat: no-repeat;
+    padding:24px 0px 45px;
+}
+
+.about_inner{
+        max-width: 600px;
+}
+
+.about_title{
+    padding: 10px 0px 25px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    color:#f9f9f9;
+    font-weight: 500;
+    font-family: 'Roboto' sans-serif;
+}
+
+.about_text{
+    margin-bottom: 40px;
+    color:#1b1b1b;
+}
+
+.about_btn{
+    color:#f9f9f9;
+}
+.about_btn:after{
+    color: "";
+    color:#1b1b1b;
+}
+
+.form{
+    padding-top: 30px;
+}
+
+.form_inner{
+    background-image: url(../img/logo_test.png);
+    padding-bottom: 40px;
+    min-height: 460px;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+.form_box{
+    padding-top: 45px;
+    max-width: 900px;
+}
+
+.form_box_inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.form_box_left{
+    max-width: 260px;
+    width: 100%;
+}
+
+.form_box_right{
+    max-width: 550px;
+    width: 100%;
+}
+
+.form_box_inner label,
+.form_box_inner input,
+.form_box_inner textarea
+.form_box_inner select{
+    display: block;
+    width: 100%;
+}
+
+.form_box_inner label{
+    line-height: 36px;
+    color:#303030;
+    font-family: 'Roboto' sans-serif;
+}
+
+.form_box_inner input,
+.form_box_inner select{
+    margin-bottom: 8px;
+    outline: none;
+    height: 20px;
+    border: 1px solid #5e5e5e;
+}
+
+.form_box_inner textarea{
+    outline: none;
+    border: 1px solid #5e5e5e;
+    padding: 10px;
+    height:200px;
+    width: 500px;
+    resize: none;
+}
+
+.form_box_inner button{
+    margin-bottom: 50px;
+    margin-right: 50px;
+    background-color: transparent;
+    color:#323232;
+    float: right;
 }
