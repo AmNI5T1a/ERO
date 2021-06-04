@@ -501,6 +501,53 @@ header{
 }
 .footer_map iframe{
     max-width: 630px;
-    max-height: 230px;
+    max-height: 430px;
     width: 100%;
+    height: 100%;
+}
+
+.footer_title{
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Roboto' sans-serif;
+    color: #f9f9f9;
+    margin-bottom: 10px;
+}
+.footer_text{
+    letter-spacing: 0.1px;
+    color: rgb(230, 230, 230);
+    margin-bottom: 25px;
+}
+.footer_contacts_list a{
+    margin-top: 10px;
+}
+
+.footer_contacts_list a{
+    font-family: 'Roboto' sans-serif;
+    color: rgb(230, 230, 230);
+    position: relative;
+    letter-spacing: 0.25px;
+    line-height: 24px;
+    font-size: 16px;
+    padding-left: 33px;
+}
+.footer_phone:before{
+    content: "\f095";
+    font-family: "icomoon";
+}
+.footer_email:before{
+    content: "\f003";
+    font-family: "icomoon";
+}
+.footer_address:before{
+    content: "\f041";
+    font-family: "icomoon";
+}
+.footer_instagram:before{
+    content: "\f16d";
+    font-family: "icomoon";
+}
+.copy_text{
+    text-align: center;
 }
