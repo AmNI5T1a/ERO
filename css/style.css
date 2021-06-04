@@ -397,8 +397,7 @@ header{
 
 .form_box_inner label,
 .form_box_inner input,
-.form_box_inner textarea
-.form_box_inner select{
+.form_box_inner textarea{
     display: block;
     width: 100%;
 }
@@ -416,6 +415,10 @@ header{
     height: 20px;
     border: 1px solid #5e5e5e;
 }
+.form_box_inner .jq-selectbox__select-text{
+    display: block;
+    width: 100%;
+}
 
 .form_box_inner textarea{
     outline: none;
@@ -427,9 +430,77 @@ header{
 }
 
 .form_box_inner button{
-    margin-bottom: 50px;
     margin-right: 50px;
+    margin-top: 30px;
     background-color: transparent;
     color:#323232;
     float: right;
+}
+
+.advantages{
+    padding: 55px 0px 40px;
+    background-image: url(../img/advantages_bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 290px;
+    background-size: cover;
+}
+.advantages_inner{
+    color:#cbcacb;
+    display: flex;
+    justify-content: space-between;
+}
+.advantages_item{
+    padding: 0px 20px;
+    max-width: 350px;
+    text-align: center;
+}
+.advantages_title{
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: 'Roboto' sans-serif;
+    padding:60px 0px 15px;
+    position:relative;
+}
+.advantages_title:before{
+    content:"";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #22b9ff;
+    top:0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.advantages_title:after{
+    content: "\f00c";
+    font-family: 'icomoon';
+    font-size: 14px;
+    position: absolute;
+    top:9.5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.advantages_text{
+    line-height: 24px;
+    color: #cbcacb;
+    letter-spacing: 00.1px;
+}
+
+.footer_contacts{
+    background-color: #595959;
+    padding: 20px 0px 30px;
+}
+.footer_inner{
+    display: flex;
+    justify-content: space-between;
+}
+.footer_map{
+    padding-top:10px;
+}
+.footer_map iframe{
+    max-width: 630px;
+    max-height: 230px;
+    width: 100%;
 }
