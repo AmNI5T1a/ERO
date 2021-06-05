@@ -38,7 +38,7 @@ header{
     line-height: 36px;
     font-family: 'Roboto' sans-serif;
     color:#1b1b1b;
-    background-color: #22b9ff;
+    background-color: #811365;
     padding: 5px 20px 4px 50px;
     font-size: 16px;
     position: relative;
@@ -74,7 +74,7 @@ header{
     font-family: 'icomoon';
     position: absolute;
     left:0;
-    color: #22b9ff;
+    color: #811365;
 }
 
 .header_email{
@@ -86,7 +86,7 @@ header{
     font-family: 'icomoon';
     position: absolute;
     left:0;
-    color: #22b9ff;
+    color: #811365;
 }
 
 .header_instagram{
@@ -98,7 +98,7 @@ header{
     font-family: 'icomoon';
     position: absolute;
     left:0;
-    color: #22b9ff;
+    color: #811365;
 }
 
 
@@ -109,6 +109,10 @@ header{
 .header_content-inner{
     display: flex;
     justify-content: space-between;
+}
+.main_logo{
+    max-width: 140px;
+    max-height: 70px;
 }
 
 .menu li{
@@ -124,7 +128,7 @@ header{
     transition: all .2s;
 }
 .menu a:hover{
-    border-color:#22b9ff;
+    border-color:#811365;
 }
 
 /* Это нужно чтобы лишка от лишки оступила, но при этом,чтобы первый элемент это правило миновал*/
@@ -157,16 +161,20 @@ header{
     text-transform: uppercase;
     font-size: 30px;
     line-height: 36px;
-    color:#1b1b1b;
+    color:#ffffff;
     font-weight: 500;
     letter-spacing: 1.5px;
     margin-bottom: 22px;
+    -webkit-text-stroke-width: 0.35px;
+   -webkit-text-stroke-color: black;
 }
 .slider_text{
     line-height: 24px;
     font-size: 18px;
-    color: #000000;
+    color: #ffffff;
     margin-bottom: 50px;
+    -webkit-text-stroke-width: 0.35px;
+   -webkit-text-stroke-color: black;
 }
 .default_btn{
     display: inline-block;
@@ -176,7 +184,7 @@ header{
     font-weight: 500;
     font-family: 'Roboto' sans-serif;
     padding: 8px 30px 8px 24px;
-    border:1.5px solid #22b9ff;
+    border:1.5px solid #811365;
     border-right-width: 22px;
     position: relative;
     z-index: 2;
@@ -205,9 +213,9 @@ header{
     z-index: 3;
     width: 40px;
     height: 40px;
-    border:1.5px solid #22b9ff;
+    border:1.5px solid #811365;
     outline: none;
-    background-color: #22b9ff;
+    background-color: #811365;
 }
 .slick_btn:before{
     position: absolute;
@@ -251,7 +259,7 @@ header{
     position: absolute;
     width: 100px;
     height: 2px;
-    background-color: #22b9ff;
+    background-color: #811365;
     left: 0;
     top:13px;
 }
@@ -274,7 +282,7 @@ header{
     color:#5e5e5e;
     line-height: 24px;
     padding: 5px 38px;
-    border:3px solid #22b9ff;
+    border:3px solid #811365;
 }
 .services_items{
     display: flex;
@@ -345,14 +353,18 @@ header{
     margin-bottom: 20px;
     font-size: 24px;
     line-height: 24px;
-    color:#f9f9f9;
+    color:#ffffff;
     font-weight: 500;
     font-family: 'Roboto' sans-serif;
+    -webkit-text-stroke-width: 0.65px;
+   -webkit-text-stroke-color: black;
 }
 
 .about_text{
     margin-bottom: 40px;
     color:#1b1b1b;
+    -webkit-text-stroke-width: 0.1px;
+   -webkit-text-stroke-color: black;
 }
 
 .about_btn{
@@ -370,9 +382,10 @@ header{
 .form_inner{
     background-image: url(../img/logo_test.png);
     padding-bottom: 40px;
-    min-height: 460px;
     background-repeat: no-repeat;
     background-position: bottom right;
+    max-height: 1000px;
+    height: 100%;
 }
 
 .form_box{
@@ -462,13 +475,15 @@ header{
     font-family: 'Roboto' sans-serif;
     padding:60px 0px 15px;
     position:relative;
+    -webkit-text-stroke-width: 0.35px;
+   -webkit-text-stroke-color: black;
 }
 .advantages_title:before{
     content:"";
     position: absolute;
     width: 40px;
     height: 40px;
-    border: 2px solid #22b9ff;
+    border: 2px solid #811365;
     top:0;
     left: 50%;
     transform: translateX(-50%);
@@ -484,8 +499,10 @@ header{
 }
 .advantages_text{
     line-height: 24px;
-    color: #cbcacb;
+    color: #ffffff;
     letter-spacing: 00.1px;
+    -webkit-text-stroke-width: 0.35px;
+   -webkit-text-stroke-color: black;
 }
 
 .footer_contacts{
@@ -518,6 +535,7 @@ header{
     letter-spacing: 0.1px;
     color: rgb(230, 230, 230);
     margin-bottom: 25px;
+    max-width: 750px;
 }
 .footer_contacts_list a{
     margin-top: 10px;
