@@ -16,7 +16,7 @@ namespace Controllers
 
         public ViewResult Index()
         {
-            
+            ViewBag.Title = "Home";
 
             return View();
         }

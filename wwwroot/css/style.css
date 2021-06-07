@@ -569,3 +569,39 @@ header{
 .copy_text{
     text-align: center;
 }
+
+
+/*Cars*/
+
+.about_car {
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    background-repeat: no-repeat;
+    padding: 24px 0px 45px;
+    margin-bottom: 100px;
+    width:100%;
+}
+
+.about_inner_car {
+    max-width: 600px;
+}
+
+.about_title_car {
+    padding: 10px 0px 25px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 24px;
+    color: #ffffff;
+    font-weight: 500;
+    font-family: 'Roboto' sans-serif;
+    -webkit-text-stroke-width: 0.65px;
+    -webkit-text-stroke-color: black;
+}
+
+.about_text_car {
+    margin-bottom: 40px;
+    color: #1b1b1b;
+    -webkit-text-stroke-width: 0.1px;
+    -webkit-text-stroke-color: black;
+}

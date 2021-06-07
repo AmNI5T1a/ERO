@@ -23,7 +23,7 @@ namespace Controllers
 
         public ViewResult List()
         {
-            ViewBag.Title = "Page with cars";
+            ViewBag.Title = "WGTTM:Cars";
 
             CarsListViewModel tempCLVM_Obj = new CarsListViewModel();
             tempCLVM_Obj.allCars = _listOfCars.GetAllCars;

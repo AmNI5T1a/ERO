@@ -1,14 +1,20 @@
-﻿<h1>
-    All Cars
-</h1>
-<h3>@Model.currentCategory</h3>
-@{ 
-  foreach(var car in Model.allCars)
+﻿@{
+    foreach (var car in Model.allCars)
     {
-        <div>
-            <h2>Model:@car.name</h2>
-            <p>Price:@car.price.ToString("c")</p>
-            <p>Category:@car.category.categoryName</p>
+    <section class="about_car" style="background-image:url(@car.img)">
+        <div class="container">
+            <div class="about_inner_car">
+                <div class="about_title_car">
+                    @car.name
+                </div>
+                <div class="about_text_car">
+                    @car.longDescription
+                </div>
+                <a href="#" class="about_btn default_btn">
+                    Get Consultation
+                </a>
+            </div>
         </div>
+    </section>
     }
 }
