@@ -9,6 +9,6 @@ namespace Data.Interfaces
 {
     public interface IGetTopCars
     {
-        IEnumerable<Car> GetAllTopCars();
+        IEnumerable<Car> GetAllTopCars { get; }
     }
 }

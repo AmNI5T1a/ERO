@@ -88,17 +88,20 @@ namespace Data.Moqs
             }
         }
 
-        public IEnumerable<Car> GetAllTopCars()
+        public IEnumerable<Car> GetAllTopCars
         {
-            List<Car> listOfTopCars = new List<Car>();
-
-            foreach(Car car in GetAllCars)
+            get
             {
-                if (car.isPopular)
-                    listOfTopCars.Add(car);
-            }
+                List<Car> listOfTopCars = new List<Car>();
 
-            return listOfTopCars;
+                foreach (Car car in GetAllCars)
+                {
+                    if (car.isPopular)
+                        listOfTopCars.Add(car);
+                }
+
+                return listOfTopCars;
+            }
         }
 
         public Car GetCarWithID(ushort carID)
