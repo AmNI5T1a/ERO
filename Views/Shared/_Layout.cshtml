@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>@ViewBag.Title</title>
+
+        <link href="~/css/normalize.css" rel="stylesheet" type="text/css">
+        <link href="~/css/fonts.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700|Roboto:400,500&amp;subset=cyrillic"
+              rel="stylesheet">
+        <link href="~/css/jquery.fancybox.min.css" rel="stylesheet" type="text/css">
+        <link href="~/css/slick.css" rel="stylesheet" type="text/css">
+        <link href="~/css/jquery.formstyler.css" rel="stylesheet" type="text/css">
+        <link href="~/css/jquery.formstyler.theme.css" rel="stylesheet" type="text/css">
+        <link href="~/css/style.css" rel="stylesheet" type="text/css">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header_top">
+                <div class="container">
+                    <div class="header_contacts">
+                        <a class="header_phone" href="tel:79066625633"> + 7(953) 633 12 47 </a>
+                        <a class="header_email" href="#">assetocorsa_car_deal@mail.ru</a>
+                        <a class="header_instagram" href="#">assetocorsa_car_deal</a>
+                        <a data-fancybox data-src="#modal" href="javascript:;" class="header_btn" href="#">
+                            Бесплатная
+                            консультация!
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="header_content">
+                <div class="container">
+                    <div class="header_content-inner">
+                        <div class="header_logo">
+                            <a href="#">
+                                <img class="main_logo" src="img/logo.png" alt="">
+                            </a>
+                        </div>
+                        <nav class="menu">
+                            <ul>
+                                <li><a href="#">Главная</a></li>
+                                <li><a href="#">О нас</a></li>
+                                <li><a href="#">Автомобили</a></li>
+                                <li><a href="#">Контакты</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div>
+            @RenderBody()
+        </div>
+
+        <section class="advantages">
+            <div class="container">
+                <div class="advantages_inner">
+                    <div class="advantages_item">
+                        <div class="advantages_title">
+                            Огромный опыт
+                        </div>
+                        <div class="advantages_text">
+                            Занимаемся продажей авто больше 30 лет
+                        </div>
+                    </div>
+                    <div class="advantages_item">
+                        <div class="advantages_title">
+                            О нас знают
+                        </div>
+                        <div class="advantages_text">
+                            Огромное количество людей доверяют нам и сотрудничают
+                        </div>
+                    </div>
+                    <div class="advantages_item">
+                        <div class="advantages_title">
+                            Юридическая чистота
+                        </div>
+                        <div class="advantages_text">
+                            Все автомобили с пробегом, представленные в наших салонах, проходят комплексную юридическую
+                            проверку.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer_contacts">
+                <div class="container">
+                    <div class="footer_inner">
+                        <div class="footer_info">
+                            <div class="footer_title">
+                                AssetoCorsa
+                            </div>
+                            <div class="footer_text">
+                                В автосалонах AssetoCorsa автомобили с пробегом на постоянной основе действуют акции и
+                                специальные финансовые программы,
+                                благодаря которым Вы сможете купить автомобиль б/у в Москве и Московской области по
+                                максимально привлекательной
+                                стоимости. Условия и сроки действия спецпредложений, а также характеристики, комплектации и
+                                цены на авто с пробегом в
+                                наличии просьба уточнять у специалистов отдела продаж по многоканальному телефону или
+                                посредством формы обратной связи.
+                            </div>
+                            <ul class="footer_contacts_list">
+                                <li><a class="footer_phone" href="#"> +7 (960) 743 33 12 </a></li>
+                                <li><a class="footer_email" href="#"> assetocorsa_car_deal@yandex.ru </a></li>
+                                <li><a class="footer_address" href="#"> ул. Стромынка, 20, Москва, 107996 </a></li>
+                                <li><a class="footer_instagram" href="#"> assetocorsa_car_deal </a></li>
+                            </ul>
+                        </div>
+                        <div class="footer_map">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d793.0057365808942!2d37.70082448433748!3d55.793950957504194!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b5350a801db277%3A0x8dcc8f1a7839b169!2z0KDQotCjINCc0JjQoNCt0JA!5e0!3m2!1sru!2sru!4v1622810862660!5m2!1sru!2sru"
+                                    style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copy_policy">
+                <div class="container">
+                    <div class="copy_text">
+                        2021 Template by AmNI5TIa. Ничего не защищено, это для вуза.
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <div id="modal">
+            <h2>Hello!</h2>
+            <p>Something to say</p>
+        </div>
+
+        <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+        </script>
+        <script src="~/js/jquery.fancybox.min.js"></script>
+        <script src="~/js/slick.min.js"></script>
+        <script src="~/js/jquery.formstyler.min.js"></script>
+        <script src="~/js/main.js"></script>
+    </body>
+</html>

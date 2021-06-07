@@ -1,0 +1,42 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\bootstrap.min.css" />
+    <None Include="wwwroot\css\fonts.css" />
+    <None Include="wwwroot\css\jquery.fancybox.min.css" />
+    <None Include="wwwroot\css\jquery.formstyler.css" />
+    <None Include="wwwroot\css\jquery.formstyler.theme.css" />
+    <None Include="wwwroot\css\normalize.css" />
+    <None Include="wwwroot\css\slick.css" />
+    <None Include="wwwroot\css\style.css" />
+    <None Include="wwwroot\fonts\icomoon.eot" />
+    <None Include="wwwroot\fonts\icomoon.svg" />
+    <None Include="wwwroot\fonts\icomoon.ttf" />
+    <None Include="wwwroot\fonts\icomoon.woff" />
+    <None Include="wwwroot\img\about_our_company.jpg" />
+    <None Include="wwwroot\img\advantages_bg.jpg" />
+    <None Include="wwwroot\img\auction_logo.png" />
+    <None Include="wwwroot\img\buy_logo.png" />
+    <None Include="wwwroot\img\logo.png" />
+    <None Include="wwwroot\img\logo_test.png" />
+    <None Include="wwwroot\img\sell_logo.png" />
+    <None Include="wwwroot\img\slider-bg.jpg" />
+    <None Include="wwwroot\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\js\bootstrap.min.js" />
+    <None Include="wwwroot\js\jquery.fancybox.min.js" />
+    <None Include="wwwroot\js\jquery.formstyler.js" />
+    <None Include="wwwroot\js\jquery.formstyler.min.js" />
+    <None Include="wwwroot\js\main.js" />
+    <None Include="wwwroot\js\slick.min.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Mvc" Version="5.2.7" />
+    <PackageReference Include="Microsoft.AspNetCore.StaticFiles" Version="2.2.0" />
+  </ItemGroup>
+
+</Project>
