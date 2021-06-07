@@ -25,6 +25,7 @@ namespace ERO
             services.AddTransient<IGetAllAvaliableCars, MoqCars>();
             services.AddTransient<IGetCarWithID, MoqCars>();
             services.AddTransient<IGetCarCategories, MoqCarCategories>();
+            services.AddTransient<IGetTopCars, MoqCars>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
