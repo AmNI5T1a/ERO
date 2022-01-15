@@ -11,7 +11,7 @@ using System.Linq;
 
 using Data.Interfaces;
 using Data.Models;
-using Data.Moqs;
+using Controllers;
 
 namespace ERO
 {
@@ -21,11 +21,7 @@ namespace ERO
         {
             services.AddMvc(options => options.EnableEndpointRouting = false);
 
-            services.AddTransient<IGetAllCars, MoqCars>();
-            services.AddTransient<IGetAllAvaliableCars, MoqCars>();
-            services.AddTransient<IGetCarWithID, MoqCars>();
-            services.AddTransient<IGetCarCategories, MoqCarCategories>();
-            services.AddTransient<IGetTopCars, MoqCars>();
+            //services.AddTransient<IGetAllCars, CarsController>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

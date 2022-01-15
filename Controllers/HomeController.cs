@@ -1,12 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-using System.Linq;
-
-using Microsoft.AspNetCore.Mvc;
-
-using Data.Interfaces;
-using ViewModels;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace Controllers
 {

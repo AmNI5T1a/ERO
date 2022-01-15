@@ -1,20 +1,20 @@
 ﻿@{
     foreach (var car in Model.allCars)
     {
-    <section class="about_car" style="background-image:url(@car.img)">
+    //<section class="about_car" style="background-image:url(@car.img)">
         <div class="container">
             <div class="about_inner_car">
                 <div class="about_title_car">
-                    @car.name
+                    @car.Name
                 </div>
                 <div class="about_text_car">
-                    @car.longDescription
+                    @car.LongDescription
                 </div>
                 <a href="#" class="about_btn_car default_btn">
                     Get Consultation
                 </a>
             </div>
         </div>
-    </section>
+    //</section>
     }
 }

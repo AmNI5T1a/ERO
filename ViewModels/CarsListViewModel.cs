@@ -8,8 +8,11 @@ namespace ViewModels
 {
     public class CarsListViewModel
     {
-        public IEnumerable<Car> allCars { get; set; }
-        
-        public string currentCategory { get; set; }
+        public LinkedList<Car> allCars { get; set; }
+
+        public CarsListViewModel()
+        {
+            allCars = new LinkedList<Car>();
+        }
     }
 }
