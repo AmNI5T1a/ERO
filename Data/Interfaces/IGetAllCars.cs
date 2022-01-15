@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-
+using System.Threading.Tasks;
 
 namespace Data.Interfaces
 {
     public interface IGetAllCars
     {
-        public ViewResult List();
+        public Task<ViewResult> List();
     }
 }

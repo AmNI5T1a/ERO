@@ -20,8 +20,9 @@ namespace ERO
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc(options => options.EnableEndpointRouting = false);
+            services.AddControllers();
 
-            //services.AddTransient<IGetAllCars, CarsController>();
+            services.AddTransient<IGetAllCars, CarsController>();
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
