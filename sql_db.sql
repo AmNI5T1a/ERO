@@ -6,7 +6,7 @@ CREATE TABLE Car(
 	name NVARCHAR(64) NOT NULL,
 	shortDescription NVARCHAR(128) NOT NULL,
 	longDescription text NOT NULL,
-	price float(3) NOT NULL,
+	price MONEY NOT NULL,
 	category_id BIGINT REFERENCES CarCategory(id)
 	);
 
@@ -42,22 +42,6 @@ SELECT * FROM Car;
 
 SELECT * FROM Car catTable LEFT JOIN CarCategory carCategoryTable ON catTable.category_id = carCategoryTable.id;
 
-
-CREATE PROCEDURE Sales.uspGetEmployeeSalesYTD  
-    @SalesPerson nvarchar(50),  
-    @SalesYTD money OUTPUT  
-AS    
-  
-    SET NOCOUNT ON;
-
-    SELECT @SalesYTD = SalesYTD  
-    FROM Sales.SalesPerson AS sp  
-    JOIN HumanResources.vEmployee AS e ON e.BusinessEntityID = sp.BusinessEntityID  
-    WHERE LastName = @SalesPerson;
-
-    RETURN;
-GO 
-
 CREATE PROCEDURE testProcedure
 AS
 	SET NOCOUNT ON
@@ -89,3 +73,50 @@ SET NOCOUNT ON
 SELECT * FROM Car catTable LEFT JOIN CarCategory carCategoryTable ON catTable.category_id = carCategoryTable.id;
 GO
 
+CREATE PROCEDURE Sales.uspGetEmployeeSalesYTD  
+    @SalesPerson nvarchar(50),  
+    @SalesYTD money OUTPUT  
+AS    
+  
+    SET NOCOUNT ON;
+
+    SELECT @SalesYTD = SalesYTD  
+    FROM Sales.SalesPerson AS sp  
+    JOIN HumanResources.vEmployee AS e ON e.BusinessEntityID = sp.BusinessEntityID  
+    WHERE LastName = @SalesPerson;
+
+    RETURN;
+GO 
+
+CREATE PROCEDURE GetCarsWithPriceInterval
+	@PriceFrom real,
+	@PriceTo real
+AS
+	SET NOCOUNT ON;
+	SELECT * FROM Car carTable
+	WHERE carTable.price BETWEEN @PriceFrom and @PriceTo
+	ORDER BY carTable.price
+
+	RETURN;
+GO
+
+EXECUTE GetCarsWithPriceInterval @PriceFrom = 0, @PriceTo = 0;
+GO
+
+SELECT * FROM Car
+GO
+
+CREATE TABLE CarTEST(
+	id BIGINT PRIMARY KEY NOT NULL,
+	price MONEY NOT NULL)
+GO
+
+INSERT INTO CarTEST(id,price) VALUES (6,6554.312332)
+GO
+
+SELECT * FROM CarTEST
+GO
+
+SELECT * FROM carTEST 
+WHERE CarTEST.price BETWEEN 100 and 10000000
+GO
