@@ -19,6 +19,10 @@ namespace Controllers
     {
         private static readonly string _connectionPath = ApplicationConfiguration.Get().GetConnectionString("DB");
 
+        /// <summary>
+        /// Show new View with all cars stored in database
+        /// </summary>
+        /// <returns> View with all cars in database </returns>
         [HttpGet("Cars/List")]
         public async Task<ViewResult> List()
         {
@@ -60,6 +64,11 @@ namespace Controllers
                 }
             }
         }
+        /// <summary>
+        /// Searching in database all cars that are in the interval of the price
+        /// </summary>
+        /// <param name="inputElement"> Contains price from and price to elements for input parameters to database procedure </param>
+        /// <returns> List of cars in the price interval</returns>
         [HttpGet("get")]
         public async Task<CarsListViewModel> ShowCarsWithPriceInterval(FromToPrice inputElement)
         {
