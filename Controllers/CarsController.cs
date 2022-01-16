@@ -18,6 +18,7 @@ namespace Controllers
     {
         private static readonly string _connectionPath = ApplicationConfiguration.Get().GetConnectionString("DB");
 
+        [HttpGet("Cars/List")]
         public async Task<ViewResult> List()
         {
             using (var dbConnection = new SqlConnection(_connectionPath))
@@ -47,9 +48,12 @@ namespace Controllers
 
                         return View(tempCLVM_Obj);
                     }
-                    catch
+                    catch(Exception e)
                     {
-                        Console.WriteLine("Error");
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Catched exception: " + e.ToString());
+                        Console.ForegroundColor = ConsoleColor.White;
+                        
                         return View("~/Views/Error.cshtml");
                     }
                 }
